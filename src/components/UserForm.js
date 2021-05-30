@@ -40,8 +40,8 @@ export class UserForm extends Component {
         bio } = this.state;
         const values = { firstName, lastName, email, 
         occupation, city, bio };
-
-       switch(step) {
+        // eslint-disable-next-line
+        switch(step) {
            case 1:
              return (
                  <FormUserDetails

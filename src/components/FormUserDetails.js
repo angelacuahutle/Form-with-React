@@ -1,8 +1,8 @@
 import React, { Components } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import AppBar from '@material-ui/core/AppBar';
 import TextField from '@material-ui/core/TextField';
-import RaisedButton from '@material-ui/core/RaisedButton';
+import Button from '@material-ui/core/Button';
 
 export class FormUserDetails extends Components {
     continue = e => {
@@ -37,10 +37,11 @@ export class FormUserDetails extends Components {
                 defaultValue={values.email}
                 />
                 <br/>
-                <RaisedButton
+                <Button
+                variant="contained" 
                 label="Continue"
                 primary={true}
-                style={Styles.button}
+                style={styles.button}
                 onClick={this.contiunue}
                 />
             </React.Fragment>
@@ -49,7 +50,7 @@ export class FormUserDetails extends Components {
     }  
 }
 
-const Styles = {
+const styles = {
     button: {
         margin: 15,
     }
