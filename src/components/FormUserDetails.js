@@ -56,4 +56,8 @@ const styles = {
   }
 }
 
+<<<<<<< HEAD
 export default FormPersonalDetails;
+=======
+export default FormUserDetails;
+>>>>>>> 98166b938c80141d48e160135e808dcba192ebdf
