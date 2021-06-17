@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
-export class FormUserDetails extends Component {
+export class FormPersonalDetails extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep()
@@ -56,4 +56,4 @@ const styles = {
   }
 }
 
-export default FormUserDetails;
+export default FormPersonalDetails;

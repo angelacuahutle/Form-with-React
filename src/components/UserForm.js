@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
+import FormPersonalDetails from './FormPersonalDetails';
  
 export class UserForm extends Component {
     state = {
@@ -51,7 +52,13 @@ export class UserForm extends Component {
                  />
              );
         case 2:
-            return <hi>FormPersonalDetails</hi>
+            return  (
+                <FormPersonalDetails
+                  nextStep={this.nextStep}
+                  handleChange={this.handleChange}
+                  values={values}
+                />
+            );    
         case 3:
             return <hi>Confirm</hi>  
         case 4:
